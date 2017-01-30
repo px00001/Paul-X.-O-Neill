@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(215,219,228);
+    background-image: url('colchuk.jpg');
+    background-repeat: no-repeat;
+    background-position-x:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    background-color:rgba(255,255,255,0.9);
+    text-align: left;
+    color:navy;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker:');
+header {
+    font-family: 'Permanent Marker', cursive;
+    font-size-adjust: 10px;
+    position: center center;
+    color:white;
+    background-color:rgba(0,0,128,0.8);
+    }
+
+.footer {
+    background-color:rgba(105, 105, 105, 0.8);
+    color:white;
+    font-size:75%;
+}
+                  
+.nav {
+    background-color:rgba(200, 200, 255, 0.7);
+    align-content: center center;
+}
+                  /*
+                  .nav ul {
+                        list-style-type: none;
+                        }
+                  .nav ul a {
+                        text-decoration: none;
+                        }
+                  */
+
+@media all and (min-width: 768px) {
+    body{background-size:cover;}
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    .footer {-webkit-order:3;order:3;}
+}
+
+
+@media all and (min-width: 1152px) {
+    body{background-size:cover;}
+    .flex-container {margin-left:auto; margin-right:auto; max-width: 1122px;}
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    .footer {-webkit-order:3;order:3;max-width:1122px;margin-bottom:none;}
+}
+
+
+button {
+    align-items:center;
+    background-color: navy;
+    border: 3px solid navy;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: list-item;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+                  
+button:hover {
+    background-color:white;
+    color: navy;
+    transition-duration: 0.4s;
+}
