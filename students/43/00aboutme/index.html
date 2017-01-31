@@ -10,6 +10,7 @@
             <meta charset="UTF-8">
             <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
             <link rel="stylesheet" href="../styles/style.css">
+            <link rel="stylesheet" href="../styles/slideshow.css">
       </head>
       <body><div class = "flex-container">
             <header>
@@ -30,16 +31,47 @@
             </nav>
             
             <article class="article">
+                  <h2>  Who is this person?</h2>
                   <p>
-                        A high school science teacher in Mayfield, Ohio, USA. 
+                        Corey Rice is a high school science teacher in Mayfield, Ohio, USA. 
                         He studied education at Bowling Green State University and the American College of Education.
-                        After a typical school day, Corey can be commonly be found coaching his <a href='https://www.soinc.org/'>Science Olympiad</a> team, whom he edearingly calls his 'nerd herd.'
-                        When he is not teaching, he can be found at home hanging out with his dog, Kona. Named after a hawaiian coffee town.
-                        Most importantly, his go-to kareoke song is Johnny Cash's <cite>Ring of Fire</cite>. 
+                        After a typical school day, Corey can commonly be found coaching his <a href='https://www.soinc.org/'>Science Olympiad</a> team, whom he edearingly calls his 'nerd herd.'
+                        When he is not teaching, he can be found at home hanging out with his dog, Kona. Named after a Hawaiian coffee town. 
+                        In the summers (when school is out of session) Corey is usually working on some sort of home renovation or camping and hiking. Mountaineering is an infrequent, but much loved passtime. 
+                        Most importantly, his go-to kareoke song is Johnny Cash's <cite><a href='https://www.youtube.com/watch?v=1Ry7lMl75Vo'>Ring of Fire</a></cite>. 
                   </p>
                   <p>
                         His girlfriend helped write this lovely Bio and she's an improv comedian, who also practices medicine. 
                   </p>
+                  <slideshow>
+                        <img class="mySlides" src="photos/colchuck800.jpg">
+                        <img class="mySlides" src="photos/alpine800.jpg">
+                        <img class="mySlides" src="photos/kona800.jpg">
+                        <img class="mySlides" src="photos/volcano800.jpg">
+                        <img class="mySlides" src="photos/arches800.jpg">
+                        <img class="mySlides" src="photos/cavs800.jpg">
+                        <img class="mySlides" src="photos/ncacades800.jpg">
+                        <img class="mySlides" src="photos/surfing800.jpg">
+                        <img class="mySlides" src="photos/canyon800.jpg">
+                  </slideshow>
+
+                  <script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";  
+                              }
+                              myIndex++;
+                              if (myIndex > x.length) {myIndex = 1}    
+                              x[myIndex-1].style.display = "block";  
+                              setTimeout(carousel, 4000); // Change image every 2 seconds
+                        }
+                  </script>
+
             </article>
 
             <footer class="footer">
