@@ -1,0 +1,19 @@
+Body{
+    color: #1b8d06;
+    font-family: "trebuchet MS";
+    font-size: 30px;
+    font-kerning: auto;
+}
+
+p {
+    color: #0c4801;
+    font-family: "trebuchet MS";
+    font-size: 18px; 
+    font-kerning: auto;   
+}
+
+.first {
+    font-family: "Trajan Pro";
+    font-size: 50px;
+    
+}
