@@ -3,3 +3,11 @@ img.static{
     display:block;
     width:100%;
 }
+
+img.sidebyside {
+    display: inline-block;
+    width: 47.5%;
+    height: auto;
+    margin: 1%;
+    border:none; 
+}
