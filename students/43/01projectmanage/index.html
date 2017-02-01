@@ -10,6 +10,7 @@
             <meta charset="UTF-8">
             <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
             <link rel="stylesheet" href="../styles/style.css">
+            <link rel="stylesheet" href="../styles/staticimg.css">
       </head>
       <body><div class = "flex-container">
             <header>
@@ -50,8 +51,8 @@
                     <li><a href='../00aboutme/'>Introduced myself</a></li>
                     <li><a href='../00preliminary/'>Described and made a sketch of final project</a></li>
                     <li><a href=#design>Avoided pitfalls along the way</a></li>
-                    <li>Documented steps for uploading files to archive</li>
-                    <li>Pushed to the class archive</li>
+                    <li><a href=#gitworkflow>Documented steps for uploading files to archive</a></li>
+                    <li><a href='http://git.fabacademy.org/fabacademy2017/fablablccc/commits/master'>Pushed to the class archive</a></li>
                 </ul>
               <hr>
               <h3 id='git'>Working Through a Git Tutorial</h3>
@@ -90,8 +91,7 @@
               <p>
                   Building the file structure went well and paring down the website versions to their simplest necessary forms went well. I have a few simple pages for “About Me,” “Final Project Ideas,” “Weekly Projects,” and a home page. I also built a ‘stub.html’ that can be used for future week’s assignments. With a little editing of the CSS and HTML I also ensured that the styles were uniform across all pages, and that I could set-up a different looking home page in the future. Once this work was done, I emailed my local instructor, Scott Zitek, for more information about how to upload my web development work. I had looked over some <a href='http://fabacademy.org/archives/content/tutorials/02_Project_Management/mercurial_install_windows_cygwin.html'>instructions located on the Fab Academy website</a>, for uploading using Cygwin and Mercurial. However, it turned out this method was out of date. Zitek directed me to <a href='https://www.fablabs.io/labs'>fablabs.io</a> and <a href='http://git.fabacademy.org/'>git.fabacademy.org</a> where I was quickly able to make accounts and quickly get started. I was thankful for my exploration of Git Bash on Thursday – it greatly expedited the process. The only real slowdown was establishing my SSH key, and connecting that to GitLabs. However, once this was done, the commit and push process was incredibly simple and I was able to push a few changes to my student folder. Once this process was complete, I was anxious to see my website be hosted on the class archive. I looked where I figured that my work may be hosted in the archive, but the stub page my instructor had placed was still the only thing that I could see. I was surprised to find there would be a hold-up to build the work that I had pushed. 
               </p>
-              <p>More to come...     (primarily about Git Bash Commands)</p>
-
+              <h3 id=gitworkflow>Git Workflow</h3>
               <p>
                   The core workflow of Git, a distributed version control system, is quite straightforward once you are a few steps into its implementation. The handshake procedures of setting up an SSH key, as described above, can be a bit more cumbersome. Luckily, it is only necessary to set-up the control protocols once before the first interaction with the remote repository. After this point, the FTP client uses this key to encrypt and secure the transmission of information between the two repositories.
               </p>
@@ -100,10 +100,15 @@
               </p>
               <ol>
                   <li>Any changes can be made to the files in the local repository.</li> 
+                  <img class='static' src='images/gitstatus.gif'> 
                   <li>Those changes are recognized automatically by Git, and can be checked with a simple ‘git status’ command.</li> 
+                  <img class='static' src='images/gitadd.gif'> 
                   <li>All current changes can be added to the Git staging area by using a ‘git add –A’ command.</li>
+                  <img class='static' src='images/gitcommit.gif'> 
                   <li>The changes to files in the staging area can then be committed by using a git command and modifier: “git commit –m ‘a simple comment on changes’”</li>  
+                  <img class='static' src='images/gitpush.gif'> 
                   <li>The last necessary step is to push the commits to the remote repository. This can be done with the following command: ‘git push origin master’ which pushes all local changes to the remote repository through the FTP, back to the repository of origin, specifically in the master branch of that repository.</li>
+                  <img class='static' src='images/gitlog.gif'> 
                   <li>If you would like to verify that everything went well, it is possible to see a log of all of the commits pushed to the origin using the ‘git log’ command.</li>
               </ol>
 
